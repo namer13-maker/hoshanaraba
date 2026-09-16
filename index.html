@@ -9,12 +9,12 @@
 <style>
   :root{
     --ink:#3a3540;
-    --cream:#f6d2d6;
+    --cream:#f4dde2;
     --plum:#7c5688;
     --plum-deep:#5f3f6b;
     --amber:#d99a3c;
     --amber-deep:#bd7f23;
-    --soft:#e8dccb;
+    --soft:#e6c6cc;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   body{font-family:'Assistant',sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}
@@ -84,7 +84,42 @@
   .thanks .big{font-size:3rem;margin-bottom:8px}
   .thanks h3{font-family:'Frank Ruhl Libre',serif;font-size:1.6rem;margin-bottom:6px;color:var(--plum-deep)}
   .thanks p{max-width:480px;margin:6px auto}
-  .wa-group{display:inline-block;margin-top:16px;background:#25d366;color:#fff;font-weight:700;text-decoration:none;padding:12px 30px;border-radius:999px;box-shadow:0 4px 14px rgba(37,211,102,.3)}
+  .wa-cta{
+    background:#e9f9ef;
+    border:2px solid #25d366;
+    border-radius:20px;
+    padding:24px 22px;
+    margin:0 auto 26px;
+    max-width:520px;
+    text-align:center;
+    box-shadow:0 6px 20px rgba(37,211,102,.18);
+  }
+  .wa-cta-title{
+    font-family:'Frank Ruhl Libre',serif;
+    font-weight:800;
+    font-size:1.5rem;
+    color:#128c3e;
+    margin-bottom:8px;
+  }
+  .wa-cta-text{
+    font-size:1.05rem;
+    color:#2c5b3d;
+    margin-bottom:18px;
+    line-height:1.5;
+  }
+  .wa-cta-btn{
+    display:inline-block;
+    background:#25d366;
+    color:#fff;
+    font-weight:700;
+    font-size:1.2rem;
+    text-decoration:none;
+    padding:14px 46px;
+    border-radius:999px;
+    box-shadow:0 5px 16px rgba(37,211,102,.4);
+    transition:transform .15s ease;
+  }
+  .wa-cta-btn:hover{transform:translateY(-2px)}
   footer{text-align:center;padding:26px 20px 34px;background:var(--soft);font-size:.98rem;margin-top:60px}
   footer a{color:var(--plum-deep);font-weight:700;text-decoration:none}
   @media (max-width:520px){.row.two{grid-template-columns:1fr}}
@@ -125,7 +160,7 @@
 <section class="form-section" id="register">
   <h2>נשמח לראות אותך</h2>
   <p class="sub2">מלאי את הפרטים ונשלח לך תזכורת וכל המידע 💛</p>
-  <p style="margin-bottom:22px"><a href="https://chat.whatsapp.com/INIPFIajqnbCU1ykWeZRFn" target="_blank" rel="noopener" style="color:#1a9e4b;font-weight:700;text-decoration:none">💬 או הצטרפי לקבוצת הוואטסאפ למתעניינות</a></p>
+  <div class="wa-cta"><div class="wa-cta-title">💬 הצטרפי לקבוצת הוואטסאפ שלנו</div><div class="wa-cta-text">לעדכונים על אירועים, מפגשים וכל מה שקורה במדרשה — הקבוצה פתוחה לכולן, לא רק למתעניינות קבועות</div><a class="wa-cta-btn" href="https://chat.whatsapp.com/INIPFIajqnbCU1ykWeZRFn" target="_blank" rel="noopener">להצטרפות לקבוצה</a></div>
 
   <div class="form-wrap">
     <form id="regForm" novalidate>
@@ -193,7 +228,7 @@
       <div class="big">💛</div>
       <h3>תודה רבה! נהיה בקשר בקרוב</h3>
       <p>מחכות לראות אותך בליל הלימוד של הושענא רבה. נזכיר: דמי השתתפות 50 ₪ 🌸</p>
-      <a class="wa-group" href="https://chat.whatsapp.com/INIPFIajqnbCU1ykWeZRFn" target="_blank" rel="noopener">💬 להצטרפות לקבוצת המתעניינות</a>
+      <div class="wa-cta"><div class="wa-cta-title">💬 הצטרפי לקבוצת הוואטסאפ שלנו</div><div class="wa-cta-text">לעדכונים על אירועים, מפגשים וכל מה שקורה במדרשה — הקבוצה פתוחה לכולן, לא רק למתעניינות קבועות</div><a class="wa-cta-btn" href="https://chat.whatsapp.com/INIPFIajqnbCU1ykWeZRFn" target="_blank" rel="noopener">להצטרפות לקבוצה</a></div>
     </div>
   </div>
 </section>
